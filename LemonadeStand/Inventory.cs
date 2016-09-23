@@ -146,7 +146,7 @@ namespace LemonadeStand
             if (cupList.Count < 1)
             {
                 cupsOutOfStock = true;
-                Console.WriteLine("\nSOLD OUT of cups! Buy more and try again tomorrow!");
+                Console.WriteLine("\nNo cups available! Buy more and try again tomorrow!");
             }
             return cupsOutOfStock;
         }
@@ -166,6 +166,7 @@ namespace LemonadeStand
                 {
                     itemsOutOfStock = true;
                     Console.WriteLine("\nNot enough ingredients available!");
+                    break;
                 }
             }
             return itemsOutOfStock;
